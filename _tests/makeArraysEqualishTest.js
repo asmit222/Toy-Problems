@@ -110,17 +110,17 @@ for (var i = 0; i < tests.length; i++) {
   if (JSON.stringify(problem3.makeArraysEqualish(tests[i][0], tests[i][1])) === JSON.stringify(makeArraysEqualishTest(tests[i][0], tests[i][1]))) {
     totalPassed++
   } else {
-    failedTests.push(`failed Make Arrays Equal(ish) test number ${i}: `);
+    failedTests.push(`failed Make Arrays Equal(ish) test number ${i+1}: `);
     failedTests.push(`input: ${JSON.stringify(tests[i][0])}, ${JSON.stringify(tests[i][1])} `);
     failedTests.push(`correct answer: ${JSON.stringify(makeArraysEqualishTest(tests[i][0], tests[i][1]))} `);
     failedTests.push(`your answer: ${JSON.stringify(problem3.makeArraysEqualish(tests[i][0], tests[i][1]))} `);
     failedTests.push(`     `);
   }
 }
-console.log(`Make Arrays Equal(ish): passed ${totalPassed} / 50 tests!`)
 for (var i = 0; i < failedTests.length; i++) {
   console.log(failedTests[i]);
 }
+console.log(`Make Arrays Equal(ish): passed ${totalPassed} / 50 tests!`)
   }
 
   function getRandomInt(max) {

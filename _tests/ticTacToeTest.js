@@ -360,17 +360,17 @@ var testBoard = boardGenerator();
 if (ticTacToeTest(testBoard) === problem1.ticTacToeSolver(testBoard)) {
 totalPassed++;
 } else {
-failedTests.push(`failed Tic-Tac-Toe test ${i}:`);
+failedTests.push(`failed Tic-Tac-Toe test ${i+1}:`);
 failedTests.push(`board: ${JSON.stringify(testBoard)}`);
 failedTests.push(`correct answer: ${ticTacToeTest(testBoard)}`);
 failedTests.push(`your answer: ${problem1.ticTacToeSolver(testBoard)}`);
 failedTests.push(`     `);
 }
 }
-console.log(`Tic-Tac-Toe: ${totalPassed} / 50 tests passed`);
 for (var i = 0; i < failedTests.length; i++) {
-console.log(failedTests[i]);
+  console.log(failedTests[i]);
 }
+console.log(`Tic-Tac-Toe: passed ${totalPassed} / 50 tests!`);
 }
 module.exports.testRunnerTicTacToe = testRunnerTicTacToe;
 module.exports.ticTacToeTest = ticTacToeTest;

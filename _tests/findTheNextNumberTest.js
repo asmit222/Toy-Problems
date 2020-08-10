@@ -40,17 +40,17 @@ for (var i = 0; i < testArr.length; i++) {
 if (findTheNextNumberTest(testArr[i]) === problem2.findTheNextNumber(testArr[i])) {
   totalPassed++;
 } else {
-  failedTests.push(`failed Find The Next Number test number ${i}: `);
+  failedTests.push(`failed Find The Next Number test number ${i+1}: `);
   failedTests.push(`input: ${testArr[i]} `);
   failedTests.push(`correct answer: ${findTheNextNumberTest(testArr[i])} `);
   failedTests.push(`your answer: ${problem2.findTheNextNumber(testArr[i])} `);
   failedTests.push(`     `);
 }
 }
-console.log(`Find The Next Number: passed ${totalPassed} / 50 tests!`)
 for (var i = 0; i < failedTests.length; i++) {
-console.log(failedTests[i]);
+  console.log(failedTests[i]);
 }
+console.log(`Find The Next Number: passed ${totalPassed} / 50 tests!`)
   }
 
   function getRandomInt(max) {
