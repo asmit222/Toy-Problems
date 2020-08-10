@@ -78,6 +78,41 @@ const makeArraysEqualishTest = function (arr1, arr2) {
   }
   }
   }
+
+for (var x = 0; x < newArr1.length; x++) {
+  for (var z = 0; z < newArr2.length; z++) {
+
+    var total1 = 0;
+    var total2 = 0;
+    for (var i = 0; i < newArr1.length; i++) {
+      total1+= newArr1[i];
+    }
+    for (var i = 0; i < newArr2.length; i++) {
+      total2+= newArr2[i];
+    }
+    var difference1 = Math.abs(total1 - total2);
+    var temp1 = newArr1[x];
+    var temp2 = newArr2[z];
+    newArr1[x] = temp2;
+    newArr2[z] = temp1;
+    total1 = 0;
+    total2 = 0;
+    for (var i = 0; i < newArr1.length; i++) {
+      total1+= newArr1[i];
+    }
+    for (var i = 0; i < newArr2.length; i++) {
+      total2+= newArr2[i];
+    }
+    var difference2 = Math.abs(total1 - total2);
+    if (difference1 < difference2) {
+    newArr1[x] = temp1;
+    newArr2[z] = temp2;
+    }
+
+
+  }
+}
+
   newArr1.sort(function (a, b) {
     return a - b;
   })
