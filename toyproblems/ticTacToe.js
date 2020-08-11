@@ -6,7 +6,7 @@ const test = require("../_tests/ticTacToeTest.js");
 
   - The 3 board columns will be represented by '1', '2', and '3'
   - The 3 board rows will be represented by 'a', 'b', and 'c'
-  - There will always be only 2 x's and 2 o's on the board
+  - There will always be only and exactly 2 x's and 2 o's on the board
 
   Example:
 
@@ -26,8 +26,6 @@ const ticTacToeSolver = function(board) {
  // your code here!
 
 };
-
-
 
 
 module.exports.ticTacToeSolver = ticTacToeSolver;

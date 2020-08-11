@@ -19,7 +19,5 @@ const makeArraysEqualish = function (arr1, arr2) {
   };
 
 
-
-
   module.exports.makeArraysEqualish = makeArraysEqualish;
   test.testRunnerMakeArraysEqualish();

@@ -22,7 +22,5 @@ const findTheNextNumber = function(arr) {
   };
 
 
-
-
   module.exports.findTheNextNumber = findTheNextNumber;
   test.testRunnerFindTheNextNumber();
