@@ -2,7 +2,7 @@ const test = require("../_tests/makeArraysEqualishTest.js");
 
 /* Make Arrays Equal(ish):
 
-- Given 2 arrays of numbers and of different lengths, rearrange the numbers within them to get the totals of the arrays to as close to equal as possible, without changing the lengths of the arrays.
+- Given 2 arrays of numbers and of different lengths, trade numbers between them to get the totals of the arrays to as close to equal as possible, without changing the lengths of the arrays.
 - Sort the arrays from least to greatest before returning them, within another array.
 
 Example:
